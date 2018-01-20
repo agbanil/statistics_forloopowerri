@@ -1,0 +1,52 @@
+{
+  "name": "statisticsservice",
+  "version": "1.0.0",
+  "description": "A simple API that gets and computes transaction information",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_PATH=. pm2 delete pm2.json && pm2 start pm2.json",
+    "stop": "pm2 stop pm2.json",
+    "remove": "pm2 delete pm2.json",
+    "regression": "NODE_PATH=. istanbul cover _mocha -- -R spec test/regression/*",
+    "linting": "jscs . && jshint ."
+  },
+  "keywords": [
+    "statistics",
+    "money"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "UNLICENSED",
+  "author": "Lawrence Agbani <l.agbani@hotmail.co.uk>",
+  "dependencies": {
+    "custom-error-generator": "7.0.0",
+    "pg": "6.1.5",
+    "http-status": "0.2.0",
+    "joi": "8.0.5",
+    "restify": "3.0.3",
+    "yamljs": "0.2.9",
+    "restify-url-semver": "1.0.0",
+    "lynx": "0.2.0",
+    "lodash.pick": "4.1.0",
+    "shortid": "2.2.4"
+  },
+  "devDependencies": {
+    "chai": "3.0.0",
+    "chai-as-promised": "5.2.0",
+    "cli-table": "0.3.1",
+    "faker": "3.0.1",
+    "istanbul": "0.4.2",
+    "jscs": "2.2.0",
+    "jshint": "2.8.0",
+    "mocha": "2.2.5",
+    "mockery": "1.4.0",
+    "nock": "8.0.0",
+    "sinon": "1.17.1",
+    "sinon-bluebird": "3.0.0",
+    "supertest": "1.1.0",
+    "yuidocjs": "0.9.0",
+    "slug": "0.9.1"
+  }
+}

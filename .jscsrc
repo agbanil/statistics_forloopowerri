@@ -1,0 +1,19 @@
+{
+	"preset": "airbnb",
+	"maxErrors": null,
+	"maximumLineLength": 120,
+	"excludeFiles": [
+		"node_modules/**",
+		"coverage/**",
+		"doc/**"
+	],
+	"validateIndentation": 4,
+	"requireTrailingComma": false,
+	"requireSemicolons": true,
+	"disallowSpacesInFunctionDeclaration": {
+		"beforeOpeningRoundBrace": true
+	},
+	"requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
+	"requireParenthesesAroundArrowParam": true,
+	"requireShorthandArrowFunctions": false
+}

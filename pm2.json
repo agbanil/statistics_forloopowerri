@@ -1,0 +1,12 @@
+{
+  "apps": [
+    {
+      "name": "Statistics-Service",
+      "script": "server.js",
+      "min_uptime": 36000,
+      "max_restarts": 1,
+      "vizion": false,
+      "exec_mode": "forked"
+    }
+  ]
+}

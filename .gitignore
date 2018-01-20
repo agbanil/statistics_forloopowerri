@@ -1,0 +1,9 @@
+atlassian-ide-plugin.xml
+.idea/
+.vscode/
+cache.properties
+.DS_Store
+/node_modules
+/coverage
+npm-debug.log
+docker_logs
